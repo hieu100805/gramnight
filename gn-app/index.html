@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>GRAM NIGHT</title>
+    <meta
+      name="description"
+      content="GRAM NIGHT Telegram Mini App. Say GN, keep your streak, and ride the moon later."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="sky-glow sky-glow-left"></div>
+      <div class="sky-glow sky-glow-right"></div>
+
+      <main class="phone-frame">
+        <section class="hero-card">
+          <div class="hero-badge">Telegram Mini App</div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="moon"></div>
+            <div class="plane-glow"></div>
+            <div class="plane">&#9992;</div>
+            <span class="star star-1"></span>
+            <span class="star star-2"></span>
+            <span class="star star-3"></span>
+          </div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Night shift for the timeline</p>
+            <h1>GRAM NIGHT</h1>
+            <p class="tagline">GN = Good Night / Gram Night</p>
+          </div>
+
+          <div class="ca-card">
+            <div>
+              <p class="label">Contract Address</p>
+              <p class="ca-value" id="contractAddress">
+                EQA69Mhu92OBCtAse0SJbv3_3VpiVV10d5vLUw_3Bg8Myt_0
+              </p>
+            </div>
+            <button class="copy-button" id="copyCaButton" type="button">Copy CA</button>
+          </div>
+
+          <div class="action-row">
+            <a class="action-button action-button-primary" href="https://t.me/GNGRAMCTO" target="_blank" rel="noreferrer">
+              Telegram
+            </a>
+            <a class="action-button action-button-secondary" href="https://gramnight.fun" target="_blank" rel="noreferrer">
+              Website
+            </a>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="GN stats">
+          <article class="stat-card">
+            <p class="label">Total GN Count</p>
+            <p class="stat-value" id="gnCount">0</p>
+            <p class="stat-note">Stored on this device</p>
+          </article>
+          <article class="stat-card">
+            <p class="label">Daily Streak</p>
+            <p class="stat-value" id="gnStreak">0</p>
+            <p class="stat-note">Keep saying GN each day</p>
+          </article>
+        </section>
+
+        <section class="gn-card">
+          <div class="gn-copy">
+            <p class="eyebrow">Tonight's ritual</p>
+            <h2>Say GN</h2>
+            <p class="supporting">
+              Tap in before bed, stack your streak, and let the chart breathe for a minute.
+            </p>
+          </div>
+
+          <button class="say-gn-button" id="sayGnButton" type="button">Say GN</button>
+
+          <div class="message-card" id="messageCard" aria-live="polite">
+            <p class="message-label">Night message</p>
+            <p class="message-text" id="messageText">Good Night. Good Narrative.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
